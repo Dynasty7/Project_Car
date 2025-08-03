@@ -1,0 +1,2 @@
+D:\MICROS~1\mingw64\bin\ar.exe qc C:\Users\71991\Desktop\Project_Car\lib\libmyLib.a CMakeFiles/myLib.dir/src/add.cpp.obj CMakeFiles/myLib.dir/src/car.cpp.obj CMakeFiles/myLib.dir/src/main.cpp.obj CMakeFiles/myLib.dir/src/road.cpp.obj CMakeFiles/myLib.dir/src/scene_base.cpp.obj CMakeFiles/myLib.dir/src/scene_straight.cpp.obj CMakeFiles/myLib.dir/src/sub.cpp.obj CMakeFiles/myLib.dir/src/traffic.cpp.obj
+D:\MICROS~1\mingw64\bin\ranlib.exe C:\Users\71991\Desktop\Project_Car\lib\libmyLib.a

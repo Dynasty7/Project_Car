@@ -1,0 +1,98 @@
+[
+{
+  "directory": "C:/Users/71991/Desktop/Project_Car/build",
+  "command": "D:\\MICROS~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/project_car.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\project_car.dir\\src\\add.cpp.obj -c C:\\Users\\71991\\Desktop\\Project_Car\\src\\add.cpp",
+  "file": "C:/Users/71991/Desktop/Project_Car/src/add.cpp",
+  "output": "CMakeFiles/project_car.dir/src/add.cpp.obj"
+},
+{
+  "directory": "C:/Users/71991/Desktop/Project_Car/build",
+  "command": "D:\\MICROS~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/project_car.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\project_car.dir\\src\\car.cpp.obj -c C:\\Users\\71991\\Desktop\\Project_Car\\src\\car.cpp",
+  "file": "C:/Users/71991/Desktop/Project_Car/src/car.cpp",
+  "output": "CMakeFiles/project_car.dir/src/car.cpp.obj"
+},
+{
+  "directory": "C:/Users/71991/Desktop/Project_Car/build",
+  "command": "D:\\MICROS~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/project_car.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\project_car.dir\\src\\main.cpp.obj -c C:\\Users\\71991\\Desktop\\Project_Car\\src\\main.cpp",
+  "file": "C:/Users/71991/Desktop/Project_Car/src/main.cpp",
+  "output": "CMakeFiles/project_car.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/71991/Desktop/Project_Car/build",
+  "command": "D:\\MICROS~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/project_car.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\project_car.dir\\src\\road.cpp.obj -c C:\\Users\\71991\\Desktop\\Project_Car\\src\\road.cpp",
+  "file": "C:/Users/71991/Desktop/Project_Car/src/road.cpp",
+  "output": "CMakeFiles/project_car.dir/src/road.cpp.obj"
+},
+{
+  "directory": "C:/Users/71991/Desktop/Project_Car/build",
+  "command": "D:\\MICROS~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/project_car.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\project_car.dir\\src\\scene_base.cpp.obj -c C:\\Users\\71991\\Desktop\\Project_Car\\src\\scene_base.cpp",
+  "file": "C:/Users/71991/Desktop/Project_Car/src/scene_base.cpp",
+  "output": "CMakeFiles/project_car.dir/src/scene_base.cpp.obj"
+},
+{
+  "directory": "C:/Users/71991/Desktop/Project_Car/build",
+  "command": "D:\\MICROS~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/project_car.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\project_car.dir\\src\\scene_straight.cpp.obj -c C:\\Users\\71991\\Desktop\\Project_Car\\src\\scene_straight.cpp",
+  "file": "C:/Users/71991/Desktop/Project_Car/src/scene_straight.cpp",
+  "output": "CMakeFiles/project_car.dir/src/scene_straight.cpp.obj"
+},
+{
+  "directory": "C:/Users/71991/Desktop/Project_Car/build",
+  "command": "D:\\MICROS~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/project_car.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\project_car.dir\\src\\sub.cpp.obj -c C:\\Users\\71991\\Desktop\\Project_Car\\src\\sub.cpp",
+  "file": "C:/Users/71991/Desktop/Project_Car/src/sub.cpp",
+  "output": "CMakeFiles/project_car.dir/src/sub.cpp.obj"
+},
+{
+  "directory": "C:/Users/71991/Desktop/Project_Car/build",
+  "command": "D:\\MICROS~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/project_car.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\project_car.dir\\src\\traffic.cpp.obj -c C:\\Users\\71991\\Desktop\\Project_Car\\src\\traffic.cpp",
+  "file": "C:/Users/71991/Desktop/Project_Car/src/traffic.cpp",
+  "output": "CMakeFiles/project_car.dir/src/traffic.cpp.obj"
+},
+{
+  "directory": "C:/Users/71991/Desktop/Project_Car/build",
+  "command": "D:\\MICROS~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/myLib.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\myLib.dir\\src\\add.cpp.obj -c C:\\Users\\71991\\Desktop\\Project_Car\\src\\add.cpp",
+  "file": "C:/Users/71991/Desktop/Project_Car/src/add.cpp",
+  "output": "CMakeFiles/myLib.dir/src/add.cpp.obj"
+},
+{
+  "directory": "C:/Users/71991/Desktop/Project_Car/build",
+  "command": "D:\\MICROS~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/myLib.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\myLib.dir\\src\\car.cpp.obj -c C:\\Users\\71991\\Desktop\\Project_Car\\src\\car.cpp",
+  "file": "C:/Users/71991/Desktop/Project_Car/src/car.cpp",
+  "output": "CMakeFiles/myLib.dir/src/car.cpp.obj"
+},
+{
+  "directory": "C:/Users/71991/Desktop/Project_Car/build",
+  "command": "D:\\MICROS~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/myLib.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\myLib.dir\\src\\main.cpp.obj -c C:\\Users\\71991\\Desktop\\Project_Car\\src\\main.cpp",
+  "file": "C:/Users/71991/Desktop/Project_Car/src/main.cpp",
+  "output": "CMakeFiles/myLib.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/71991/Desktop/Project_Car/build",
+  "command": "D:\\MICROS~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/myLib.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\myLib.dir\\src\\road.cpp.obj -c C:\\Users\\71991\\Desktop\\Project_Car\\src\\road.cpp",
+  "file": "C:/Users/71991/Desktop/Project_Car/src/road.cpp",
+  "output": "CMakeFiles/myLib.dir/src/road.cpp.obj"
+},
+{
+  "directory": "C:/Users/71991/Desktop/Project_Car/build",
+  "command": "D:\\MICROS~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/myLib.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\myLib.dir\\src\\scene_base.cpp.obj -c C:\\Users\\71991\\Desktop\\Project_Car\\src\\scene_base.cpp",
+  "file": "C:/Users/71991/Desktop/Project_Car/src/scene_base.cpp",
+  "output": "CMakeFiles/myLib.dir/src/scene_base.cpp.obj"
+},
+{
+  "directory": "C:/Users/71991/Desktop/Project_Car/build",
+  "command": "D:\\MICROS~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/myLib.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\myLib.dir\\src\\scene_straight.cpp.obj -c C:\\Users\\71991\\Desktop\\Project_Car\\src\\scene_straight.cpp",
+  "file": "C:/Users/71991/Desktop/Project_Car/src/scene_straight.cpp",
+  "output": "CMakeFiles/myLib.dir/src/scene_straight.cpp.obj"
+},
+{
+  "directory": "C:/Users/71991/Desktop/Project_Car/build",
+  "command": "D:\\MICROS~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/myLib.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\myLib.dir\\src\\sub.cpp.obj -c C:\\Users\\71991\\Desktop\\Project_Car\\src\\sub.cpp",
+  "file": "C:/Users/71991/Desktop/Project_Car/src/sub.cpp",
+  "output": "CMakeFiles/myLib.dir/src/sub.cpp.obj"
+},
+{
+  "directory": "C:/Users/71991/Desktop/Project_Car/build",
+  "command": "D:\\MICROS~1\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/myLib.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\myLib.dir\\src\\traffic.cpp.obj -c C:\\Users\\71991\\Desktop\\Project_Car\\src\\traffic.cpp",
+  "file": "C:/Users/71991/Desktop/Project_Car/src/traffic.cpp",
+  "output": "CMakeFiles/myLib.dir/src/traffic.cpp.obj"
+}
+]
