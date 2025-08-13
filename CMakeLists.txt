@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.20.0)
 project(project_car)
 
 # 指定C++标准
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 
 # 指定头文件路径
 include_directories(${PROJECT_SOURCE_DIR}/include)
@@ -21,4 +21,6 @@ aux_source_directory(${PROJECT_SOURCE_DIR}/src SRC_LIST)
 add_executable(project_car ${SRC_LIST})
 
 # 生成库文件
-add_library(myLib STATIC ${SRC_LIST})
+# add_library(myLib STATIC ${SRC_LIST})
+
+target_link_libraries(project_car libeasyx.a)

@@ -8,10 +8,10 @@
 		},
 		"paths" : 
 		{
-			"cmake" : "D:/Microsoft VS Code/cmake/bin/cmake.exe",
-			"cpack" : "D:/Microsoft VS Code/cmake/bin/cpack.exe",
-			"ctest" : "D:/Microsoft VS Code/cmake/bin/ctest.exe",
-			"root" : "D:/Microsoft VS Code/cmake/share/cmake-4.1"
+			"cmake" : "D:/Microsoft VS Code/CMake/bin/cmake.exe",
+			"cpack" : "D:/Microsoft VS Code/CMake/bin/cpack.exe",
+			"ctest" : "D:/Microsoft VS Code/CMake/bin/ctest.exe",
+			"root" : "D:/Microsoft VS Code/CMake/share/cmake-4.1"
 		},
 		"version" : 
 		{
@@ -26,7 +26,7 @@
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-27c6f14a0928a48109ca.json",
+			"jsonFile" : "codemodel-v2-7051906ea3538411a291.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-6bdbeea1fdca107ef1f9.json",
+			"jsonFile" : "cache-v2-c90a8071db4d2aacc050.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-8b9e4bf7c316c1f70405.json",
+			"jsonFile" : "cmakeFiles-v1-61ae8ebfdb2d829476ad.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -90,7 +90,7 @@
 				"responses" : 
 				[
 					{
-						"jsonFile" : "cache-v2-6bdbeea1fdca107ef1f9.json",
+						"jsonFile" : "cache-v2-c90a8071db4d2aacc050.json",
 						"kind" : "cache",
 						"version" : 
 						{
@@ -99,7 +99,7 @@
 						}
 					},
 					{
-						"jsonFile" : "codemodel-v2-27c6f14a0928a48109ca.json",
+						"jsonFile" : "codemodel-v2-7051906ea3538411a291.json",
 						"kind" : "codemodel",
 						"version" : 
 						{
@@ -117,7 +117,7 @@
 						}
 					},
 					{
-						"jsonFile" : "cmakeFiles-v1-8b9e4bf7c316c1f70405.json",
+						"jsonFile" : "cmakeFiles-v1-61ae8ebfdb2d829476ad.json",
 						"kind" : "cmakeFiles",
 						"version" : 
 						{

@@ -15,8 +15,7 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -31,8 +30,7 @@
 					"name" : "project_car",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -40,15 +38,8 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "myLib::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-myLib-Debug-c866a2cc087ddbdce406.json",
-					"name" : "myLib",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
 					"id" : "project_car::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-project_car-Debug-dcb4915a2ead7ffa6c82.json",
+					"jsonFile" : "target-project_car-Debug-827cd9e42637474bfede.json",
 					"name" : "project_car",
 					"projectIndex" : 0
 				}

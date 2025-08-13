@@ -119,7 +119,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Microsoft VS Code/cmake/bin/cmake.exe"
+			"value" : "D:/Microsoft VS Code/CMake/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -131,7 +131,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Microsoft VS Code/cmake/bin/cpack.exe"
+			"value" : "D:/Microsoft VS Code/CMake/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -143,7 +143,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Microsoft VS Code/cmake/bin/ctest.exe"
+			"value" : "D:/Microsoft VS Code/CMake/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -1127,7 +1127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Microsoft VS Code/cmake/share/cmake-4.1"
+			"value" : "D:/Microsoft VS Code/CMake/share/cmake-4.1"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",

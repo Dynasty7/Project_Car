@@ -1,9 +1,11 @@
 {
-	"archive" : {},
 	"artifacts" : 
 	[
 		{
-			"path" : "C:/Users/71991/Desktop/Project_Car/lib/libmyLib.a"
+			"path" : "C:/Users/71991/Desktop/Project_Car/bin/project_car.exe"
+		},
+		{
+			"path" : "C:/Users/71991/Desktop/Project_Car/bin/project_car.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -11,7 +13,8 @@
 	{
 		"commands" : 
 		[
-			"add_library",
+			"add_executable",
+			"target_link_libraries",
 			"include_directories"
 		],
 		"files" : 
@@ -26,11 +29,17 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 24,
+				"line" : 21,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
+				"file" : 0,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
 				"file" : 0,
 				"line" : 11,
 				"parent" : 0
@@ -43,13 +52,13 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++11"
+					"fragment" : "-g -std=gnu++17"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"path" : "C:/Users/71991/Desktop/Project_Car/include"
 				}
 			],
@@ -60,7 +69,7 @@
 				[
 					1
 				],
-				"standard" : "11"
+				"standard" : "17"
 			},
 			"sourceIndexes" : 
 			[
@@ -71,13 +80,43 @@
 				4,
 				5,
 				6,
-				7
+				7,
+				8,
+				9
 			]
 		}
 	],
-	"id" : "myLib::@6890427a1f51a3e7e1df",
-	"name" : "myLib",
-	"nameOnDisk" : "libmyLib.a",
+	"id" : "project_car::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-Bstatic",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-leasyx",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-Bdynamic",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "project_car",
+	"nameOnDisk" : "project_car.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -96,18 +135,14 @@
 				4,
 				5,
 				6,
-				7
+				7,
+				8,
+				9
 			]
 		}
 	],
 	"sources" : 
 	[
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/add.cpp",
-			"sourceGroupIndex" : 0
-		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
@@ -118,6 +153,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/planning_base.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -135,13 +176,25 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/scene_straight.cpp",
+			"path" : "src/scene_drift.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/sub.cpp",
+			"path" : "src/scene_obs_pass.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/scene_park.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/scene_straight.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -151,5 +204,5 @@
 			"sourceGroupIndex" : 0
 		}
 	],
-	"type" : "STATIC_LIBRARY"
+	"type" : "EXECUTABLE"
 }

@@ -47,10 +47,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\Microsoft VS Code\cmake\bin\cmake.exe"
+CMAKE_COMMAND = "D:\Microsoft VS Code\CMake\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\Microsoft VS Code\cmake\bin\cmake.exe" -E rm -f
+RM = "D:\Microsoft VS Code\CMake\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"D:\Microsoft VS Code\cmake\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"D:\Microsoft VS Code\CMake\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -128,53 +128,12 @@ project_car/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/build
 .PHONY : project_car/fast
 
-#=============================================================================
-# Target rules for targets named myLib
-
-# Build rule for target.
-myLib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 myLib
-.PHONY : myLib
-
-# fast build rule for target.
-myLib/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/build
-.PHONY : myLib/fast
-
-src/add.obj: src/add.cpp.obj
-.PHONY : src/add.obj
-
-# target to build an object file
-src/add.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/add.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/add.cpp.obj
-.PHONY : src/add.cpp.obj
-
-src/add.i: src/add.cpp.i
-.PHONY : src/add.i
-
-# target to preprocess a source file
-src/add.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/add.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/add.cpp.i
-.PHONY : src/add.cpp.i
-
-src/add.s: src/add.cpp.s
-.PHONY : src/add.s
-
-# target to generate assembly for a file
-src/add.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/add.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/add.cpp.s
-.PHONY : src/add.cpp.s
-
 src/car.obj: src/car.cpp.obj
 .PHONY : src/car.obj
 
 # target to build an object file
 src/car.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/car.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/car.cpp.obj
 .PHONY : src/car.cpp.obj
 
 src/car.i: src/car.cpp.i
@@ -183,7 +142,6 @@ src/car.i: src/car.cpp.i
 # target to preprocess a source file
 src/car.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/car.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/car.cpp.i
 .PHONY : src/car.cpp.i
 
 src/car.s: src/car.cpp.s
@@ -192,7 +150,6 @@ src/car.s: src/car.cpp.s
 # target to generate assembly for a file
 src/car.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/car.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/car.cpp.s
 .PHONY : src/car.cpp.s
 
 src/main.obj: src/main.cpp.obj
@@ -201,7 +158,6 @@ src/main.obj: src/main.cpp.obj
 # target to build an object file
 src/main.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/main.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -210,7 +166,6 @@ src/main.i: src/main.cpp.i
 # target to preprocess a source file
 src/main.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/main.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -219,8 +174,31 @@ src/main.s: src/main.cpp.s
 # target to generate assembly for a file
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/main.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/planning_base.obj: src/planning_base.cpp.obj
+.PHONY : src/planning_base.obj
+
+# target to build an object file
+src/planning_base.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/planning_base.cpp.obj
+.PHONY : src/planning_base.cpp.obj
+
+src/planning_base.i: src/planning_base.cpp.i
+.PHONY : src/planning_base.i
+
+# target to preprocess a source file
+src/planning_base.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/planning_base.cpp.i
+.PHONY : src/planning_base.cpp.i
+
+src/planning_base.s: src/planning_base.cpp.s
+.PHONY : src/planning_base.s
+
+# target to generate assembly for a file
+src/planning_base.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/planning_base.cpp.s
+.PHONY : src/planning_base.cpp.s
 
 src/road.obj: src/road.cpp.obj
 .PHONY : src/road.obj
@@ -228,7 +206,6 @@ src/road.obj: src/road.cpp.obj
 # target to build an object file
 src/road.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/road.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/road.cpp.obj
 .PHONY : src/road.cpp.obj
 
 src/road.i: src/road.cpp.i
@@ -237,7 +214,6 @@ src/road.i: src/road.cpp.i
 # target to preprocess a source file
 src/road.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/road.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/road.cpp.i
 .PHONY : src/road.cpp.i
 
 src/road.s: src/road.cpp.s
@@ -246,7 +222,6 @@ src/road.s: src/road.cpp.s
 # target to generate assembly for a file
 src/road.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/road.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/road.cpp.s
 .PHONY : src/road.cpp.s
 
 src/scene_base.obj: src/scene_base.cpp.obj
@@ -255,7 +230,6 @@ src/scene_base.obj: src/scene_base.cpp.obj
 # target to build an object file
 src/scene_base.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/scene_base.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/scene_base.cpp.obj
 .PHONY : src/scene_base.cpp.obj
 
 src/scene_base.i: src/scene_base.cpp.i
@@ -264,7 +238,6 @@ src/scene_base.i: src/scene_base.cpp.i
 # target to preprocess a source file
 src/scene_base.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/scene_base.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/scene_base.cpp.i
 .PHONY : src/scene_base.cpp.i
 
 src/scene_base.s: src/scene_base.cpp.s
@@ -273,8 +246,79 @@ src/scene_base.s: src/scene_base.cpp.s
 # target to generate assembly for a file
 src/scene_base.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/scene_base.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/scene_base.cpp.s
 .PHONY : src/scene_base.cpp.s
+
+src/scene_drift.obj: src/scene_drift.cpp.obj
+.PHONY : src/scene_drift.obj
+
+# target to build an object file
+src/scene_drift.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/scene_drift.cpp.obj
+.PHONY : src/scene_drift.cpp.obj
+
+src/scene_drift.i: src/scene_drift.cpp.i
+.PHONY : src/scene_drift.i
+
+# target to preprocess a source file
+src/scene_drift.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/scene_drift.cpp.i
+.PHONY : src/scene_drift.cpp.i
+
+src/scene_drift.s: src/scene_drift.cpp.s
+.PHONY : src/scene_drift.s
+
+# target to generate assembly for a file
+src/scene_drift.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/scene_drift.cpp.s
+.PHONY : src/scene_drift.cpp.s
+
+src/scene_obs_pass.obj: src/scene_obs_pass.cpp.obj
+.PHONY : src/scene_obs_pass.obj
+
+# target to build an object file
+src/scene_obs_pass.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/scene_obs_pass.cpp.obj
+.PHONY : src/scene_obs_pass.cpp.obj
+
+src/scene_obs_pass.i: src/scene_obs_pass.cpp.i
+.PHONY : src/scene_obs_pass.i
+
+# target to preprocess a source file
+src/scene_obs_pass.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/scene_obs_pass.cpp.i
+.PHONY : src/scene_obs_pass.cpp.i
+
+src/scene_obs_pass.s: src/scene_obs_pass.cpp.s
+.PHONY : src/scene_obs_pass.s
+
+# target to generate assembly for a file
+src/scene_obs_pass.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/scene_obs_pass.cpp.s
+.PHONY : src/scene_obs_pass.cpp.s
+
+src/scene_park.obj: src/scene_park.cpp.obj
+.PHONY : src/scene_park.obj
+
+# target to build an object file
+src/scene_park.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/scene_park.cpp.obj
+.PHONY : src/scene_park.cpp.obj
+
+src/scene_park.i: src/scene_park.cpp.i
+.PHONY : src/scene_park.i
+
+# target to preprocess a source file
+src/scene_park.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/scene_park.cpp.i
+.PHONY : src/scene_park.cpp.i
+
+src/scene_park.s: src/scene_park.cpp.s
+.PHONY : src/scene_park.s
+
+# target to generate assembly for a file
+src/scene_park.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/scene_park.cpp.s
+.PHONY : src/scene_park.cpp.s
 
 src/scene_straight.obj: src/scene_straight.cpp.obj
 .PHONY : src/scene_straight.obj
@@ -282,7 +326,6 @@ src/scene_straight.obj: src/scene_straight.cpp.obj
 # target to build an object file
 src/scene_straight.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/scene_straight.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/scene_straight.cpp.obj
 .PHONY : src/scene_straight.cpp.obj
 
 src/scene_straight.i: src/scene_straight.cpp.i
@@ -291,7 +334,6 @@ src/scene_straight.i: src/scene_straight.cpp.i
 # target to preprocess a source file
 src/scene_straight.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/scene_straight.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/scene_straight.cpp.i
 .PHONY : src/scene_straight.cpp.i
 
 src/scene_straight.s: src/scene_straight.cpp.s
@@ -300,35 +342,7 @@ src/scene_straight.s: src/scene_straight.cpp.s
 # target to generate assembly for a file
 src/scene_straight.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/scene_straight.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/scene_straight.cpp.s
 .PHONY : src/scene_straight.cpp.s
-
-src/sub.obj: src/sub.cpp.obj
-.PHONY : src/sub.obj
-
-# target to build an object file
-src/sub.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/sub.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/sub.cpp.obj
-.PHONY : src/sub.cpp.obj
-
-src/sub.i: src/sub.cpp.i
-.PHONY : src/sub.i
-
-# target to preprocess a source file
-src/sub.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/sub.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/sub.cpp.i
-.PHONY : src/sub.cpp.i
-
-src/sub.s: src/sub.cpp.s
-.PHONY : src/sub.s
-
-# target to generate assembly for a file
-src/sub.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/sub.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/sub.cpp.s
-.PHONY : src/sub.cpp.s
 
 src/traffic.obj: src/traffic.cpp.obj
 .PHONY : src/traffic.obj
@@ -336,7 +350,6 @@ src/traffic.obj: src/traffic.cpp.obj
 # target to build an object file
 src/traffic.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/traffic.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/traffic.cpp.obj
 .PHONY : src/traffic.cpp.obj
 
 src/traffic.i: src/traffic.cpp.i
@@ -345,7 +358,6 @@ src/traffic.i: src/traffic.cpp.i
 # target to preprocess a source file
 src/traffic.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/traffic.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/traffic.cpp.i
 .PHONY : src/traffic.cpp.i
 
 src/traffic.s: src/traffic.cpp.s
@@ -354,7 +366,6 @@ src/traffic.s: src/traffic.cpp.s
 # target to generate assembly for a file
 src/traffic.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_car.dir\build.make CMakeFiles/project_car.dir/src/traffic.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\myLib.dir\build.make CMakeFiles/myLib.dir/src/traffic.cpp.s
 .PHONY : src/traffic.cpp.s
 
 # Help Target
@@ -365,29 +376,34 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... myLib
 	@echo ... project_car
-	@echo ... src/add.obj
-	@echo ... src/add.i
-	@echo ... src/add.s
 	@echo ... src/car.obj
 	@echo ... src/car.i
 	@echo ... src/car.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/planning_base.obj
+	@echo ... src/planning_base.i
+	@echo ... src/planning_base.s
 	@echo ... src/road.obj
 	@echo ... src/road.i
 	@echo ... src/road.s
 	@echo ... src/scene_base.obj
 	@echo ... src/scene_base.i
 	@echo ... src/scene_base.s
+	@echo ... src/scene_drift.obj
+	@echo ... src/scene_drift.i
+	@echo ... src/scene_drift.s
+	@echo ... src/scene_obs_pass.obj
+	@echo ... src/scene_obs_pass.i
+	@echo ... src/scene_obs_pass.s
+	@echo ... src/scene_park.obj
+	@echo ... src/scene_park.i
+	@echo ... src/scene_park.s
 	@echo ... src/scene_straight.obj
 	@echo ... src/scene_straight.i
 	@echo ... src/scene_straight.s
-	@echo ... src/sub.obj
-	@echo ... src/sub.i
-	@echo ... src/sub.s
 	@echo ... src/traffic.obj
 	@echo ... src/traffic.i
 	@echo ... src/traffic.s
